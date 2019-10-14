@@ -5,17 +5,16 @@ public class Person extends NameHolder{
 	
 	public Person() throws NameException {
 		String temp1 = "Bo";
-		String temp2 = "Smith";
+		String temp2 = "Alex";
 		lastName = temp1;
 		super.setFirstName(temp2);
-		
 		
 	}
 	
 	public Person(String firstName, String lastName) throws NameException{
-		this.lastName = firstName;
+		this.lastName = lastName;
 		
-		super.setFirstName(lastName);
+		super.setFirstName(firstName);
 	}
 
 	@Override
